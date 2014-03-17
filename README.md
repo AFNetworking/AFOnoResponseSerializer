@@ -21,7 +21,7 @@ manager.responseSerializer = [AFOnoResponseSerializer XMLSerializer];
 
 ```objective-c
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-manager.responseSerializer = [AFOnoResponseSerializer HTTPSerializer];
+manager.responseSerializer = [AFOnoResponseSerializer HTMLSerializer];
 [manager GET:@"http://example.com/bar.html" parameters:nil success:^(NSHTTPURLResponse *response, ONOXMLDocument *responseDocument) {
     for (ONOXMLElement *element in [responseDocument CSS:@"body ul li"]) {
         NSLog(@"%@", element);
