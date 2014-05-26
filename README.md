@@ -3,6 +3,16 @@ AFOnoResponseSerializer
 
 `AFOnoResponseSerializer` is an XML and HTML response serializer for AFNetworking 2.0, using [Ono](https://github.com/mattt/ono).
 
+## Installation
+
+[CocoaPods](http://cocoapods.org) is the recommended method of installing AFOnoResponseSerializer. Simply add the following line to your `Podfile`:
+
+#### Podfile
+
+```ruby
+pod 'AFOnoResponseSerializer'
+```
+
 ## Usage
 
 ### XML
