@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AFOnoResponseSerializer'
-  s.version  = '0.0.1'
+  s.version  = '1.0.0'
   s.license  = 'MIT'
   s.summary  = 'An XML and HTML response serializer for AFNetworking 2.0, using Ono.'
   s.homepage = 'https://github.com/AFNetworking/AFOnoResponseSerializer'
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
 
   s.dependency 'AFNetworking', '~> 2.2'
-  s.dependency 'Ono', '~> 0.0.3'
+  s.dependency 'Ono', '~> 1.0'
 end
