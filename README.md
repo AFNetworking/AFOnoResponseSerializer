@@ -10,7 +10,7 @@ AFOnoResponseSerializer
 ```objective-c
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 manager.responseSerializer = [AFOnoResponseSerializer XMLResponseSerializer];
-[manager GET:@"http://example.com/foo.xml" parameters:nil success:^(NSHTTPURLResponse *response, ONOXMLDocument *responseDocument) {
+[manager GET:@"http://example.com/foo.xml" parameters:nil success:^(AFHTTPRequestOperation *operation, ONOXMLDocument *responseDocument) {
     for (ONOXMLElement *element in [responseDocument XPath:@"//item"]) {
         NSLog(@"%@", element);
     }
@@ -22,7 +22,7 @@ manager.responseSerializer = [AFOnoResponseSerializer XMLResponseSerializer];
 ```objective-c
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 manager.responseSerializer = [AFOnoResponseSerializer HTMLResponseSerializer];
-[manager GET:@"http://example.com/bar.html" parameters:nil success:^(NSHTTPURLResponse *response, ONOXMLDocument *responseDocument) {
+[manager GET:@"http://example.com/bar.html" parameters:nil success:^(AFHTTPRequestOperation *operation, ONOXMLDocument *responseDocument) {
     for (ONOXMLElement *element in [responseDocument CSS:@"body ul li"]) {
         NSLog(@"%@", element);
     }
