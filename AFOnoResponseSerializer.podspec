@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
 
   s.dependency 'AFNetworking', '~> 3.0.0-beta.1'
-  s.dependency 'Ono', '~> 1.1'
+  s.dependency 'Ono', :git => 'https://github.com/atwoodjw/Ono'
 end
